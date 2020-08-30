@@ -1,0 +1,14 @@
+<div class="timeline" *ngFor="let timeline of timelineData;let indexOfelement=index;">
+    <div class="container left" *ngIf="indexOfelement%2 === 0">
+      <div class="content">
+        <h2>{{timeline.dating}}</h2>
+        <p>{{timeline.contentToDisplay}}</p>
+      </div>
+    </div>
+    <div class="container right" *ngIf="indexOfelement%2 !== 0">
+      <div class="content">
+        <h2>{{timeline.dating}}</h2>
+        <p>{{timeline.contentToDisplay}}</p>
+      </div>
+    </div>
+  </div>
