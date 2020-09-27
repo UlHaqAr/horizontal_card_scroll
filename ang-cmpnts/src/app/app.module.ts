@@ -17,13 +17,15 @@ import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { EventCard1Component } from './event-card1/event-card1.component';
 import { EventCard2Component } from './event-card2/event-card2.component';
 import { VertTimelineComponent } from './vert-timeline/vert-timeline.component';
+import { CreativeScrollComponent } from './creative-scroll/creative-scroll.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventCard1Component,
     EventCard2Component,
-    VertTimelineComponent
+    VertTimelineComponent,
+    CreativeScrollComponent
   ],
   imports: [
     BrowserModule,
