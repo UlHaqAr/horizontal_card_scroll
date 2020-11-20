@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 import { SwiperModule } from 'ngx-swiper-wrapper';
 import { SWIPER_CONFIG } from 'ngx-swiper-wrapper';
@@ -18,6 +19,7 @@ import { EventCard1Component } from './event-card1/event-card1.component';
 import { EventCard2Component } from './event-card2/event-card2.component';
 import { VertTimelineComponent } from './vert-timeline/vert-timeline.component';
 import { CreativeScrollComponent } from './creative-scroll/creative-scroll.component';
+import { DragDropComponent } from './drag-drop/drag-drop.component';
 
 @NgModule({
   declarations: [
@@ -25,14 +27,16 @@ import { CreativeScrollComponent } from './creative-scroll/creative-scroll.compo
     EventCard1Component,
     EventCard2Component,
     VertTimelineComponent,
-    CreativeScrollComponent
+    CreativeScrollComponent,
+    DragDropComponent
   ],
   imports: [
     BrowserModule,
     MatIconModule,
     MatCardModule,
     SwiperModule,
-    HttpClientModule
+    HttpClientModule,
+    DragDropModule
   ],
   providers: [{
     provide: SWIPER_CONFIG,
