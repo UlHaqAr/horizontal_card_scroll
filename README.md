@@ -4,3 +4,4 @@
 3. vertical timeline
 4. creative scroll bar - colored progressive scrolling
 5. drag and drop
+6. half close side nav bar (working proto with hover is pending)
